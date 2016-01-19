@@ -13,6 +13,7 @@
 		4867403C1C4D7F2100BACAF3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4867403B1C4D7F2100BACAF3 /* Assets.xcassets */; };
 		4867403F1C4D7F2100BACAF3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4867403D1C4D7F2100BACAF3 /* LaunchScreen.storyboard */; };
 		489EE77D1C4D8451009E6ED7 /* NumberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489EE77C1C4D8451009E6ED7 /* NumberViewController.swift */; };
+		489EE7821C4EBFD3009E6ED7 /* ZoomTransitionAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489EE7811C4EBFD3009E6ED7 /* ZoomTransitionAnimator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		4867403E1C4D7F2100BACAF3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		486740401C4D7F2100BACAF3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		489EE77C1C4D8451009E6ED7 /* NumberViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumberViewController.swift; sourceTree = "<group>"; };
+		489EE7811C4EBFD3009E6ED7 /* ZoomTransitionAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ZoomTransitionAnimator.swift; path = Transition/ZoomTransitionAnimator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +73,7 @@
 		489EE77E1C4D8913009E6ED7 /* Transition */ = {
 			isa = PBXGroup;
 			children = (
+				489EE7811C4EBFD3009E6ED7 /* ZoomTransitionAnimator.swift */,
 			);
 			name = Transition;
 			sourceTree = "<group>";
@@ -149,6 +152,7 @@
 				489EE77D1C4D8451009E6ED7 /* NumberViewController.swift in Sources */,
 				486740371C4D7F2100BACAF3 /* ViewController.swift in Sources */,
 				486740351C4D7F2100BACAF3 /* AppDelegate.swift in Sources */,
+				489EE7821C4EBFD3009E6ED7 /* ZoomTransitionAnimator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
