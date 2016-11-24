@@ -9,19 +9,19 @@
 import UIKit
 
 class NumberViewController: UIViewController {
-    @IBOutlet private weak var numberLabel: UILabel!
-    @IBOutlet private weak var currencyLabel: UILabel!
-    @IBOutlet private weak var spellOutLabel: UILabel!
+    @IBOutlet fileprivate weak var numberLabel: UILabel!
+    @IBOutlet fileprivate weak var currencyLabel: UILabel!
+    @IBOutlet fileprivate weak var spellOutLabel: UILabel!
     var number = 0
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        let numberFormatter = NSNumberFormatter()
-        numberFormatter.numberStyle = .DecimalStyle
-        numberLabel.text = numberFormatter.stringFromNumber(number)
-        numberFormatter.numberStyle = .CurrencyStyle
-        currencyLabel.text = numberFormatter.stringFromNumber(number)
-        numberFormatter.numberStyle = .SpellOutStyle
-        spellOutLabel.text = numberFormatter.stringFromNumber(number)
+        let numberFormatter = NumberFormatter()
+        numberFormatter.numberStyle = .decimal
+        numberLabel.text = numberFormatter.string(from: NSNumber(value: number))
+        numberFormatter.numberStyle = .currency
+        currencyLabel.text = numberFormatter.string(from: NSNumber(value: number))
+        numberFormatter.numberStyle = .spellOut
+        spellOutLabel.text = numberFormatter.string(from: NSNumber(value: number))
     }
 }
